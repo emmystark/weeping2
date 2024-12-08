@@ -109,6 +109,10 @@
   margin: 0;
 }
 
+.mobileNav1 {
+  display: none;
+  
+}
 .mobileNav li {
   text-align: center;
   padding: 10px 0;
@@ -290,13 +294,72 @@ nav .lists {
     /* height: 100vh; */
     border: 1px solid #444;
     z-index: 9999;
-    display: none;
+    
     
   }
+  .mobileNav1 {
+    display: block;
+
+
+    position: relative;
+    /* top: -50px; */
+    height: 20px;
+    /* float: right; */
+    /* left: 5%; */
+    /* display: none !important; */
+    /* width: 20px; */
+    /* padding: 60px; */
+    /* height: 10px; */
+    background-color: black;
+
+  }
   .stickySideNav {
-    z-index: 99999;
-    height: 1589px;
+    display: none;
+  }
+  .stickySideNav1 {
+    position: absolute;
+    z-index: 999999999999;
+    height: 100vh;
+    width: 99.7%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    display: flex;
+    padding-right: 10px;
     background-color: #000000;
+    color: white;
+    font-size: 10px;
+
+    /* display: none; */
+
+
+    /* position: sticky; */
+  /* top: 60px; */
+  /* width: 307px; */
+  background-color: #000000;
+  color: white;
+  /* padding: 60px 50px; */
+  /* height: 181.4vh; */
+  /* height: 100vh; */
+  /* border: 1px solid #444; */
+  z-index: 999999999;
+  }  
+  .stickySideNav1 nav ul li {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-left: 40px; */
+  }
+  
+  .sideNavList li.active {
+   
+   color: white;
+   width: 110%;
+   margin-left: 5px;
+   /* left: 10%; */
+   /* font-size: 6px; */
+   text-align: center;
+
+   
   }
   .stickyTopNav {
     background-color: black;
@@ -305,13 +368,21 @@ nav .lists {
   .image {
     left: -12%;
     position: relative;
+    width: 100%;
+    /* border: 1px solid black; */
   }
- 
+  .navContent {
+    border: none;
+    
+  }
+  
   .mobileNav {
     position: relative;
-    top: -58px;
+    top: -50px;
+    height: 20px;
     float: right;
-    left: -12%;
+    left: 5%;
+    display: none !important;
     /* width: 20px; */
     /* padding: 60px; */
     /* height: 10px; */
@@ -352,9 +423,12 @@ nav .lists {
     z-index: 99999999999999999;
     /* background-color: red; */
     position: relative;
-    top: -90%;
-    left: 25%;
-    width: 20%;
+    top: 2%;
+    height: 60px;
+    left: 1.6%;
+    background-color: #000000;
+    float: right;
+    width: 10%;
     /* text-align: center; */
   }
   .image {
@@ -373,4 +447,23 @@ nav .lists {
     z-index: 9999999;
     position: absolute;
   }
+  .topbanner button {
+    height: 30px;
+  }
+  .topbanner {
+    position: sticky;
+    font-size: 9px;
+    padding-top:10px ;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(253 36 127);
+    border: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ethnocentric Rg', sans-serif ! important ;
+    /* justify-content: space-around; */
+  }
+
+  
+  
 }

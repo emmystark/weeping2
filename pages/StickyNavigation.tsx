@@ -98,10 +98,26 @@ const StickyNavigation: React.FC<{
               <Link href="/activity">
               <li className={router.pathname === "/activity" ? styles.active : ""}>Activity</li>
               </Link>
+
+
+              <ul className={styles.mobileNav1}>
+            <ConnectWallet />
+           {/* {/* <li><a href="#about">About</a></li> */}
+           
+            
+          </ul>
             </ul>
           </nav>
       
+
+
+
+
+        </aside>
+
+
       {mobileMenuOpen && (
+      <div className={styles.stickySideNav1}>
           <nav>
             <ul className={`${styles.sideNavList} ${styles.lists}`}>
             <Link href="/dashboard">
@@ -118,13 +134,8 @@ const StickyNavigation: React.FC<{
               </Link>
             </ul>
           </nav>
+      </div>
         )}
-
-
-
-
-        </aside>
-
         {/* Main Section */}
         {/* <section className={styles.content}>
           <Dashboard/>
