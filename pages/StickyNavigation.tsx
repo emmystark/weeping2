@@ -38,10 +38,10 @@ const StickyNavigation: React.FC<{
               
               <img src="./weep.png" alt="Logo" className={` ${styles.image}` } onClick={toggleMobileMenu} />
               </a>
-
               <div className={`${router.pathname === "/dashboard" ? styles.active : ""} ${styles.mobileMenuIcon}`} onClick={toggleMobileMenu}>
               ☰
             </div>
+
         
         
         </div>
