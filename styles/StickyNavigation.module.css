@@ -117,7 +117,9 @@
   text-align: center;
   padding: 10px 0;
 }
-
+.connectingbtn {
+  display: none;
+}
 .mobileNav li a {
   text-decoration: none;
   color: white;
@@ -463,8 +465,12 @@ nav .lists {
     font-family: 'Ethnocentric Rg', sans-serif ! important ;
     /* justify-content: space-around; */
   }
-
-
+  .connectingbtn {
+    margin-top: 100%;
+    margin-left: 40px;
+    display: block;
+  }
+}
   @media screen and (min-device-width: 200px) and (max-device-width: 375px){
   .mobileMenuIcon {
     position: relative;
@@ -486,9 +492,21 @@ nav .lists {
       background-color: #000000;
       width: 30%;
       z-index: 9999999999;
-    }
+      color: white; /* Default color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.mobileMenuIcon.open {
+  color: white; /* Change to white when nav is open */
+}
+    
     .image1 {
       width: 150px;
     }
+    .connectingbtn {
+      margin-top: 60%;
+      margin-left: 210px;
+      display: block;
+    }
   }
-}
+
