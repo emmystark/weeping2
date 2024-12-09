@@ -467,10 +467,11 @@ nav .lists {
   }
   
 }
-  @media screen and (min-device-width: 376px) and (max-device-width: 426px){
+  @media screen and (min-device-width: 391px) and (max-device-width: 429px){
   .mobileMenuIcon {
     position: relative;
-    left: 141.5%;
+    left: 8.9cap;
+    /* overflow-x: hidden; */
     margin-top: -48px;
     background-color: #000000;
     width: 30%;
@@ -486,11 +487,11 @@ nav .lists {
     display: block;
   }
   }
-  @media screen and (min-device-width: 281px) and (max-device-width: 375px){
+  @media screen and (min-device-width: 281px) and (max-device-width: 390px){
     .mobileMenuIcon {
       position: relative;
-      left: 3.5%;
-      margin-top: 1px;
+      left: 5.5%;
+      margin-top: 0px;
       background-color: #000000;
       width: 20%;
       z-index: 9999999999;
@@ -505,7 +506,7 @@ nav .lists {
       display: block;
     }
   }
-  @media screen and (min-device-width: 426px) and (max-device-width: 768px){
+  @media screen and (min-device-width: 430px) and (max-device-width: 768px){
     .mobileMenuIcon {
       position: relative;
       left: 370.5%;
